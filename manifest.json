@@ -1,18 +1,26 @@
 {
   "manifest_version": 3,
-  "name": "Catify",
+  "name": "Extension_test",
   "description": "방문한 페이지의 배경으로 설정할 사진을 선택해주세요",
   "version": "1.0",
   "icons": {
-    "16": "images/곤뇽1.png",
-    "32": "images/곤뇽2.png",
-    "48": "images/곤뇽3.png",
-    "128": "images/곤뇽4.png"
+    "16": "images/19.png",
+    "32": "images/19.png",
+    "48": "images/19.png",
+    "128": "images/19.png"
   },
 
   "action": {
-    "default_icon": "images/곤뇽1.png",
+    "default_icon": "images/19.png",
     "default_title": "확장 테스트",
     "default_popup": "popup/popup.html"
-  }
+  },
+
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts/inject.js"]
+    }
+  ]
 }
