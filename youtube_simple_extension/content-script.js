@@ -1,8 +1,8 @@
-let video = $(".html5-video-container video")[0];
+let video = document.querySelector(".html5-video-container video");
 
-$(document).on("keyup", function (e) {
+document.addEventListener("keyup", function (e) {
   if (e.keyCode === 82) {
-    $(video).is("[loop]")
+    video.hasAttribute("loop")
       ? video.removeAttribute("loop")
       : video.setAttribute("loop", true);
   }
