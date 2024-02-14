@@ -4,7 +4,7 @@ document.addEventListener("keyup", function (e) {
     let comments = document.querySelectorAll("ytd-comment-renderer");
 
     comments.forEach((comment) => {
-      comment.style.backgroundColor = "#acacac"; // 원하는 색상 코드로 변경해주시면 됩니다.
+      comment.style.background = "#acacac"; // 원하는 색상 코드로 변경해주시면 됩니다.
     });
   }
 });
